@@ -112,7 +112,11 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
+<<<<<<< HEAD:3D Dev Game 2/Assets/Scenes/Layout.unity
   m_NavMeshData: {fileID: 23800000, guid: 8c9f735c5db2355438b772c789a06253, type: 2}
+=======
+  m_NavMeshData: {fileID: 23800000, guid: d3581f52c80d2dc47a98e0a3f3641268, type: 2}
+>>>>>>> 68cd9dd0e7c33edac9a8e73e5296ae2f434bc0a1:3D Dev Game 2/Assets/Layout.unity
 --- !u!1001 &275878
 Prefab:
   m_ObjectHideFlags: 0
@@ -160,6 +164,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 6e7eaf0587836c04c8c979c9f03eadfe, type: 2}
+    - target: {fileID: 100000, guid: 1e74f681cde7c214c9a4910142604955, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1e74f681cde7c214c9a4910142604955, type: 3}
   m_IsPrefabParent: 0
@@ -300,6 +308,7 @@ Prefab:
       propertyPath: connectingBase.Array.data[2]
       value: 
       objectReference: {fileID: 563416902}
+<<<<<<< HEAD:3D Dev Game 2/Assets/Scenes/Layout.unity
     - target: {fileID: 114392423226509534, guid: f67f60ad8b6cea14b948f89c2d0b978e,
         type: 2}
       propertyPath: health.bar
@@ -314,6 +323,11 @@ Prefab:
         type: 2}
       propertyPath: health.currentVal
       value: 10
+=======
+    - target: {fileID: 1912190494350514, guid: f67f60ad8b6cea14b948f89c2d0b978e, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+>>>>>>> 68cd9dd0e7c33edac9a8e73e5296ae2f434bc0a1:3D Dev Game 2/Assets/Layout.unity
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f67f60ad8b6cea14b948f89c2d0b978e, type: 2}
@@ -461,6 +475,7 @@ Prefab:
       propertyPath: connectingBase.Array.data[1]
       value: 
       objectReference: {fileID: 1629856903}
+<<<<<<< HEAD:3D Dev Game 2/Assets/Scenes/Layout.unity
     - target: {fileID: 114392423226509534, guid: f67f60ad8b6cea14b948f89c2d0b978e,
         type: 2}
       propertyPath: health.bar
@@ -475,6 +490,11 @@ Prefab:
         type: 2}
       propertyPath: health.currentVal
       value: 10
+=======
+    - target: {fileID: 1912190494350514, guid: f67f60ad8b6cea14b948f89c2d0b978e, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+>>>>>>> 68cd9dd0e7c33edac9a8e73e5296ae2f434bc0a1:3D Dev Game 2/Assets/Layout.unity
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f67f60ad8b6cea14b948f89c2d0b978e, type: 2}
@@ -2051,6 +2071,7 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: be3ec15f594684449aaa0b2119a5142e, type: 3}
   m_PrefabInternal: {fileID: 237156819}
+<<<<<<< HEAD:3D Dev Game 2/Assets/Scenes/Layout.unity
 --- !u!1 &257077560
 GameObject:
   m_ObjectHideFlags: 0
@@ -2162,6 +2183,8 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+=======
+>>>>>>> 68cd9dd0e7c33edac9a8e73e5296ae2f434bc0a1:3D Dev Game 2/Assets/Layout.unity
 --- !u!1001 &268803040
 Prefab:
   m_ObjectHideFlags: 0
@@ -2305,6 +2328,7 @@ Prefab:
       propertyPath: connectingBase.Array.data[2]
       value: 
       objectReference: {fileID: 1629856903}
+<<<<<<< HEAD:3D Dev Game 2/Assets/Scenes/Layout.unity
     - target: {fileID: 114392423226509534, guid: f67f60ad8b6cea14b948f89c2d0b978e,
         type: 2}
       propertyPath: health.bar
@@ -2323,6 +2347,11 @@ Prefab:
     - target: {fileID: 1912190494350514, guid: f67f60ad8b6cea14b948f89c2d0b978e, type: 2}
       propertyPath: m_Layer
       value: 9
+=======
+    - target: {fileID: 1912190494350514, guid: f67f60ad8b6cea14b948f89c2d0b978e, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+>>>>>>> 68cd9dd0e7c33edac9a8e73e5296ae2f434bc0a1:3D Dev Game 2/Assets/Layout.unity
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f67f60ad8b6cea14b948f89c2d0b978e, type: 2}
@@ -3130,6 +3159,7 @@ Prefab:
       propertyPath: connectingBase.Array.data[3]
       value: 
       objectReference: {fileID: 1206358321}
+<<<<<<< HEAD:3D Dev Game 2/Assets/Scenes/Layout.unity
     - target: {fileID: 114392423226509534, guid: f67f60ad8b6cea14b948f89c2d0b978e,
         type: 2}
       propertyPath: health.maxVal
@@ -3145,6 +3175,12 @@ Prefab:
       propertyPath: health.bar
       value: 
       objectReference: {fileID: 565339600}
+=======
+    - target: {fileID: 1912190494350514, guid: f67f60ad8b6cea14b948f89c2d0b978e, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+>>>>>>> 68cd9dd0e7c33edac9a8e73e5296ae2f434bc0a1:3D Dev Game 2/Assets/Layout.unity
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f67f60ad8b6cea14b948f89c2d0b978e, type: 2}
   m_IsPrefabParent: 0
@@ -3381,7 +3417,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &421272803
 Transform:
   m_ObjectHideFlags: 0
@@ -4002,6 +4038,7 @@ GameObject:
   - component: {fileID: 477549649}
   - component: {fileID: 477549648}
   - component: {fileID: 477549647}
+  - component: {fileID: 477549651}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -4069,12 +4106,39 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 477549646}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD:3D Dev Game 2/Assets/Scenes/Layout.unity
   m_LocalPosition: {x: 3.8552, y: -7.9483013, z: 23.558}
   m_LocalScale: {x: 300, y: 1, z: 300}
+=======
+  m_LocalPosition: {x: 3.8552, y: -7.9483013, z: 57.5}
+  m_LocalScale: {x: 200, y: 1, z: 200}
+>>>>>>> 68cd9dd0e7c33edac9a8e73e5296ae2f434bc0a1:3D Dev Game 2/Assets/Layout.unity
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &477549651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 477549646}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80542dac8ebb9f749bcfeb800397806c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitMenu: {fileID: 0}
+  playerBaseLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  units: []
+  playerUnitCooldown: 0
+  currentBase: {fileID: 0}
+  destinationBase: {fileID: 0}
+  enemyUnits: []
+  enemyUnitCooldown: 0
+  enemyBases: []
 --- !u!1001 &508291367
 Prefab:
   m_ObjectHideFlags: 0
@@ -4218,7 +4282,15 @@ Prefab:
         type: 2}
       propertyPath: health.bar
       value: 
+<<<<<<< HEAD:3D Dev Game 2/Assets/Scenes/Layout.unity
       objectReference: {fileID: 1141417109}
+=======
+      objectReference: {fileID: 563416902}
+    - target: {fileID: 1912190494350514, guid: f67f60ad8b6cea14b948f89c2d0b978e, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+>>>>>>> 68cd9dd0e7c33edac9a8e73e5296ae2f434bc0a1:3D Dev Game 2/Assets/Layout.unity
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f67f60ad8b6cea14b948f89c2d0b978e, type: 2}
   m_IsPrefabParent: 0
@@ -4708,6 +4780,7 @@ Prefab:
       propertyPath: connectingBase.Array.data[3]
       value: 
       objectReference: {fileID: 389998028}
+<<<<<<< HEAD:3D Dev Game 2/Assets/Scenes/Layout.unity
     - target: {fileID: 114392423226509534, guid: f67f60ad8b6cea14b948f89c2d0b978e,
         type: 2}
       propertyPath: health.maxVal
@@ -4723,6 +4796,12 @@ Prefab:
       propertyPath: health.bar
       value: 
       objectReference: {fileID: 1882673347}
+=======
+    - target: {fileID: 1912190494350514, guid: f67f60ad8b6cea14b948f89c2d0b978e, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+>>>>>>> 68cd9dd0e7c33edac9a8e73e5296ae2f434bc0a1:3D Dev Game 2/Assets/Layout.unity
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f67f60ad8b6cea14b948f89c2d0b978e, type: 2}
   m_IsPrefabParent: 0
@@ -5993,6 +6072,7 @@ Prefab:
       propertyPath: connectingBase.Array.data[3]
       value: 
       objectReference: {fileID: 767157204}
+<<<<<<< HEAD:3D Dev Game 2/Assets/Scenes/Layout.unity
     - target: {fileID: 114392423226509534, guid: f67f60ad8b6cea14b948f89c2d0b978e,
         type: 2}
       propertyPath: health.maxVal
@@ -6008,6 +6088,12 @@ Prefab:
       propertyPath: health.bar
       value: 
       objectReference: {fileID: 106227915}
+=======
+    - target: {fileID: 1912190494350514, guid: f67f60ad8b6cea14b948f89c2d0b978e, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+>>>>>>> 68cd9dd0e7c33edac9a8e73e5296ae2f434bc0a1:3D Dev Game 2/Assets/Layout.unity
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f67f60ad8b6cea14b948f89c2d0b978e, type: 2}
   m_IsPrefabParent: 0
@@ -6080,6 +6166,7 @@ Prefab:
       propertyPath: connectingBase.Array.data[1]
       value: 
       objectReference: {fileID: 27982835}
+<<<<<<< HEAD:3D Dev Game 2/Assets/Scenes/Layout.unity
     - target: {fileID: 114392423226509534, guid: f67f60ad8b6cea14b948f89c2d0b978e,
         type: 2}
       propertyPath: health.bar
@@ -6094,6 +6181,11 @@ Prefab:
         type: 2}
       propertyPath: health.currentVal
       value: 10
+=======
+    - target: {fileID: 1912190494350514, guid: f67f60ad8b6cea14b948f89c2d0b978e, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+>>>>>>> 68cd9dd0e7c33edac9a8e73e5296ae2f434bc0a1:3D Dev Game 2/Assets/Layout.unity
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f67f60ad8b6cea14b948f89c2d0b978e, type: 2}
@@ -6941,6 +7033,7 @@ Prefab:
       propertyPath: connectingBase.Array.data[3]
       value: 
       objectReference: {fileID: 1629856903}
+<<<<<<< HEAD:3D Dev Game 2/Assets/Scenes/Layout.unity
     - target: {fileID: 114392423226509534, guid: f67f60ad8b6cea14b948f89c2d0b978e,
         type: 2}
       propertyPath: health.maxVal
@@ -6956,6 +7049,12 @@ Prefab:
       propertyPath: health.bar
       value: 
       objectReference: {fileID: 602163639}
+=======
+    - target: {fileID: 1912190494350514, guid: f67f60ad8b6cea14b948f89c2d0b978e, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+>>>>>>> 68cd9dd0e7c33edac9a8e73e5296ae2f434bc0a1:3D Dev Game 2/Assets/Layout.unity
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f67f60ad8b6cea14b948f89c2d0b978e, type: 2}
   m_IsPrefabParent: 0
@@ -7614,6 +7713,7 @@ Prefab:
       propertyPath: connectingBase.Array.data[1]
       value: 
       objectReference: {fileID: 674803177}
+<<<<<<< HEAD:3D Dev Game 2/Assets/Scenes/Layout.unity
     - target: {fileID: 114392423226509534, guid: f67f60ad8b6cea14b948f89c2d0b978e,
         type: 2}
       propertyPath: health.bar
@@ -7628,6 +7728,11 @@ Prefab:
         type: 2}
       propertyPath: health.currentVal
       value: 10
+=======
+    - target: {fileID: 1912190494350514, guid: f67f60ad8b6cea14b948f89c2d0b978e, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+>>>>>>> 68cd9dd0e7c33edac9a8e73e5296ae2f434bc0a1:3D Dev Game 2/Assets/Layout.unity
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f67f60ad8b6cea14b948f89c2d0b978e, type: 2}
@@ -10613,7 +10718,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1181387964
 Transform:
   m_ObjectHideFlags: 0
@@ -10784,6 +10889,7 @@ Prefab:
       propertyPath: connectingBase.Array.data[2]
       value: 
       objectReference: {fileID: 831280407}
+<<<<<<< HEAD:3D Dev Game 2/Assets/Scenes/Layout.unity
     - target: {fileID: 114392423226509534, guid: f67f60ad8b6cea14b948f89c2d0b978e,
         type: 2}
       propertyPath: health.bar
@@ -10798,6 +10904,11 @@ Prefab:
         type: 2}
       propertyPath: health.currentVal
       value: 10
+=======
+    - target: {fileID: 1912190494350514, guid: f67f60ad8b6cea14b948f89c2d0b978e, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+>>>>>>> 68cd9dd0e7c33edac9a8e73e5296ae2f434bc0a1:3D Dev Game 2/Assets/Layout.unity
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f67f60ad8b6cea14b948f89c2d0b978e, type: 2}
@@ -11485,6 +11596,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1279864755}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1286564444 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1622407240817092, guid: 6e605abeca2ef624eb5f67c14732c1f0,
+    type: 2}
+  m_PrefabInternal: {fileID: 376096371}
 --- !u!1001 &1289466384
 Prefab:
   m_ObjectHideFlags: 0
@@ -11633,6 +11749,7 @@ Prefab:
       value: 
       objectReference: {fileID: 1206358321}
     - target: {fileID: 1912190494350514, guid: f67f60ad8b6cea14b948f89c2d0b978e, type: 2}
+<<<<<<< HEAD:3D Dev Game 2/Assets/Scenes/Layout.unity
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
@@ -11651,6 +11768,15 @@ Prefab:
       propertyPath: health.bar
       value: 
       objectReference: {fileID: 1548451618}
+=======
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1912190494350514, guid: f67f60ad8b6cea14b948f89c2d0b978e, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+>>>>>>> 68cd9dd0e7c33edac9a8e73e5296ae2f434bc0a1:3D Dev Game 2/Assets/Layout.unity
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f67f60ad8b6cea14b948f89c2d0b978e, type: 2}
   m_IsPrefabParent: 0
@@ -11723,6 +11849,7 @@ Prefab:
       propertyPath: connectingBase.Array.data[2]
       value: 
       objectReference: {fileID: 1592322231}
+<<<<<<< HEAD:3D Dev Game 2/Assets/Scenes/Layout.unity
     - target: {fileID: 114392423226509534, guid: f67f60ad8b6cea14b948f89c2d0b978e,
         type: 2}
       propertyPath: health.bar
@@ -11732,11 +11859,73 @@ Prefab:
         type: 2}
       propertyPath: health.maxVal
       value: 10
+=======
+    - target: {fileID: 1912190494350514, guid: f67f60ad8b6cea14b948f89c2d0b978e, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: f67f60ad8b6cea14b948f89c2d0b978e, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1307012933 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4596859077457070, guid: f67f60ad8b6cea14b948f89c2d0b978e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1307012932}
+--- !u!114 &1307012934 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114392423226509534, guid: f67f60ad8b6cea14b948f89c2d0b978e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1307012932}
+  m_Script: {fileID: 11500000, guid: f75749b44cf411d42b31307ad5a2b235, type: 3}
+--- !u!1001 &1312452363
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4776989831533872, guid: e7343cb51cd6d2847932b77fb19ae380, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776989831533872, guid: e7343cb51cd6d2847932b77fb19ae380, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -6.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776989831533872, guid: e7343cb51cd6d2847932b77fb19ae380, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 80.454575
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776989831533872, guid: e7343cb51cd6d2847932b77fb19ae380, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776989831533872, guid: e7343cb51cd6d2847932b77fb19ae380, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.99995995
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776989831533872, guid: e7343cb51cd6d2847932b77fb19ae380, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776989831533872, guid: e7343cb51cd6d2847932b77fb19ae380, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.008956289
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776989831533872, guid: e7343cb51cd6d2847932b77fb19ae380, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+>>>>>>> 68cd9dd0e7c33edac9a8e73e5296ae2f434bc0a1:3D Dev Game 2/Assets/Layout.unity
       objectReference: {fileID: 0}
     - target: {fileID: 114392423226509534, guid: f67f60ad8b6cea14b948f89c2d0b978e,
         type: 2}
       propertyPath: health.currentVal
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1389677752159238, guid: e7343cb51cd6d2847932b77fb19ae380, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f67f60ad8b6cea14b948f89c2d0b978e, type: 2}
@@ -11834,7 +12023,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400018, guid: 74224b604b305e34b9f54853ff9dc292, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 18.91
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 400018, guid: 74224b604b305e34b9f54853ff9dc292, type: 3}
       propertyPath: m_LocalRotation.x
@@ -11863,6 +12052,10 @@ Prefab:
     - target: {fileID: 100018, guid: 74224b604b305e34b9f54853ff9dc292, type: 3}
       propertyPath: m_Name
       value: BlueTeamCastle
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: 74224b604b305e34b9f54853ff9dc292, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74224b604b305e34b9f54853ff9dc292, type: 3}
@@ -12186,7 +12379,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1399796588
 Transform:
   m_ObjectHideFlags: 0
@@ -14099,6 +14292,7 @@ Prefab:
       propertyPath: connectingBase.Array.data[1]
       value: 
       objectReference: {fileID: 30739936}
+<<<<<<< HEAD:3D Dev Game 2/Assets/Scenes/Layout.unity
     - target: {fileID: 114392423226509534, guid: f67f60ad8b6cea14b948f89c2d0b978e,
         type: 2}
       propertyPath: health.bar
@@ -14113,6 +14307,11 @@ Prefab:
         type: 2}
       propertyPath: health.currentVal
       value: 10
+=======
+    - target: {fileID: 1912190494350514, guid: f67f60ad8b6cea14b948f89c2d0b978e, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+>>>>>>> 68cd9dd0e7c33edac9a8e73e5296ae2f434bc0a1:3D Dev Game 2/Assets/Layout.unity
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f67f60ad8b6cea14b948f89c2d0b978e, type: 2}
@@ -14418,6 +14617,7 @@ Prefab:
       propertyPath: connectingBase.Array.data[2]
       value: 
       objectReference: {fileID: 30739936}
+<<<<<<< HEAD:3D Dev Game 2/Assets/Scenes/Layout.unity
     - target: {fileID: 114392423226509534, guid: f67f60ad8b6cea14b948f89c2d0b978e,
         type: 2}
       propertyPath: health.bar
@@ -14432,6 +14632,11 @@ Prefab:
         type: 2}
       propertyPath: health.currentVal
       value: 10
+=======
+    - target: {fileID: 1912190494350514, guid: f67f60ad8b6cea14b948f89c2d0b978e, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+>>>>>>> 68cd9dd0e7c33edac9a8e73e5296ae2f434bc0a1:3D Dev Game 2/Assets/Layout.unity
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f67f60ad8b6cea14b948f89c2d0b978e, type: 2}
@@ -14521,6 +14726,55 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: be3ec15f594684449aaa0b2119a5142e, type: 3}
   m_PrefabInternal: {fileID: 1642842209}
+<<<<<<< HEAD:3D Dev Game 2/Assets/Scenes/Layout.unity
+=======
+--- !u!1001 &1675465765
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4074552571503668, guid: 8d4b16c480bee4d4b9d3538d8adf61d4, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -2.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4074552571503668, guid: 8d4b16c480bee4d4b9d3538d8adf61d4, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -6.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 4074552571503668, guid: 8d4b16c480bee4d4b9d3538d8adf61d4, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 27.283989
+      objectReference: {fileID: 0}
+    - target: {fileID: 4074552571503668, guid: 8d4b16c480bee4d4b9d3538d8adf61d4, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4074552571503668, guid: 8d4b16c480bee4d4b9d3538d8adf61d4, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4074552571503668, guid: 8d4b16c480bee4d4b9d3538d8adf61d4, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4074552571503668, guid: 8d4b16c480bee4d4b9d3538d8adf61d4, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4074552571503668, guid: 8d4b16c480bee4d4b9d3538d8adf61d4, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742145147466030, guid: 8d4b16c480bee4d4b9d3538d8adf61d4, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 8d4b16c480bee4d4b9d3538d8adf61d4, type: 2}
+  m_IsPrefabParent: 0
+>>>>>>> 68cd9dd0e7c33edac9a8e73e5296ae2f434bc0a1:3D Dev Game 2/Assets/Layout.unity
 --- !u!1001 &1710888890
 Prefab:
   m_ObjectHideFlags: 0
@@ -14811,8 +15065,13 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 114702105498433136, guid: e7343cb51cd6d2847932b77fb19ae380,
     type: 2}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD:3D Dev Game 2/Assets/Scenes/Layout.unity
   m_GameObject: {fileID: 1736051887}
   m_Enabled: 1
+=======
+  m_GameObject: {fileID: 1734600027}
+  m_Enabled: 0
+>>>>>>> 68cd9dd0e7c33edac9a8e73e5296ae2f434bc0a1:3D Dev Game 2/Assets/Layout.unity
   m_EditorHideFlags: 0
   m_Script: {fileID: -1200242548, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -15647,7 +15906,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1790098318
 Transform:
   m_ObjectHideFlags: 0
@@ -17593,6 +17852,62 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: be3ec15f594684449aaa0b2119a5142e, type: 3}
   m_PrefabInternal: {fileID: 2004974065}
+--- !u!1001 &2017362077
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4806194081586580, guid: 591c10dc6a4b41740b5806eef02eed12, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 21.782497
+      objectReference: {fileID: 0}
+    - target: {fileID: 4806194081586580, guid: 591c10dc6a4b41740b5806eef02eed12, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -7.4483013
+      objectReference: {fileID: 0}
+    - target: {fileID: 4806194081586580, guid: 591c10dc6a4b41740b5806eef02eed12, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 32.098976
+      objectReference: {fileID: 0}
+    - target: {fileID: 4806194081586580, guid: 591c10dc6a4b41740b5806eef02eed12, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4806194081586580, guid: 591c10dc6a4b41740b5806eef02eed12, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4806194081586580, guid: 591c10dc6a4b41740b5806eef02eed12, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4806194081586580, guid: 591c10dc6a4b41740b5806eef02eed12, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4806194081586580, guid: 591c10dc6a4b41740b5806eef02eed12, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785710910554248, guid: 591c10dc6a4b41740b5806eef02eed12,
+        type: 2}
+      propertyPath: enemyBases.Array.data[0]
+      value: 
+      objectReference: {fileID: 289709906}
+    - target: {fileID: 114785710910554248, guid: 591c10dc6a4b41740b5806eef02eed12,
+        type: 2}
+      propertyPath: unitMenu
+      value: 
+      objectReference: {fileID: 1286564444}
+    - target: {fileID: 1288694441493584, guid: 591c10dc6a4b41740b5806eef02eed12, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 591c10dc6a4b41740b5806eef02eed12, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &2018254227
 Prefab:
   m_ObjectHideFlags: 0
@@ -18171,6 +18486,7 @@ Prefab:
       propertyPath: connectingBase.Array.data[2]
       value: 
       objectReference: {fileID: 668425798}
+<<<<<<< HEAD:3D Dev Game 2/Assets/Scenes/Layout.unity
     - target: {fileID: 114392423226509534, guid: f67f60ad8b6cea14b948f89c2d0b978e,
         type: 2}
       propertyPath: health.bar
@@ -18185,6 +18501,11 @@ Prefab:
         type: 2}
       propertyPath: health.currentVal
       value: 10
+=======
+    - target: {fileID: 1912190494350514, guid: f67f60ad8b6cea14b948f89c2d0b978e, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+>>>>>>> 68cd9dd0e7c33edac9a8e73e5296ae2f434bc0a1:3D Dev Game 2/Assets/Layout.unity
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f67f60ad8b6cea14b948f89c2d0b978e, type: 2}
