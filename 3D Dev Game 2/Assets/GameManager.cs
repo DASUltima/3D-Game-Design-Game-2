@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour {
     public List<GameObject> units;
     public float playerUnitCooldown;
     public Base currentBase;
+    public Base playerHomeBase;
 
     public Base destinationBase;
 
@@ -22,9 +23,12 @@ public class GameManager : MonoBehaviour {
     int currentPath;
 
     [Header("Enemy")]
+    public Base enemyHomeBase;
     public List<GameObject> enemyUnits;
     public float enemyUnitCooldown;
     public List<Base> enemyBases;
+
+    public GameObject gameEndMenu;
 
     // Use this for initialization
     void Start () {
