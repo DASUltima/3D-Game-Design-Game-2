@@ -1,0 +1,214 @@
+fileFormatVersion: 2
+guid: fda8e1d031209d34e86db9436c628557
+timeCreated: 1525110158
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Bone001
+    100004: Bone001(mirrored)
+    100006: Bone002
+    100008: Bone002(mirrored)
+    100010: Bone003
+    100012: Bone003(mirrored)
+    100014: Bone004
+    100016: Bone004(mirrored)
+    100018: Bone005
+    100020: Bone005(mirrored)
+    100022: Bone006
+    100024: Bone006(mirrored)
+    100026: Bone006(mirrored)001
+    100028: Bone007
+    100030: Bone007(mirrored)
+    100032: Bone012
+    100034: Bone013
+    100036: Bone016
+    100038: Bone017
+    100040: Bone018
+    100042: Bone019
+    100044: Bone020
+    100046: Bone021
+    100048: Bone022
+    100050: Bone023
+    100052: Bone024
+    100054: Bone025
+    100056: Head
+    100058: HeadNub
+    100060: IK Chain001
+    100062: IK Chain002
+    100064: IK Chain003
+    100066: IK Chain004
+    100068: Neck
+    100070: Pelvis
+    100072: Pelvisnub
+    100074: RollBone
+    100076: Spine1
+    100078: Spine2
+    100080: Spine3
+    100082: SwordF
+    100084: Toenub
+    100086: Toenub(mirrored)
+    100088: Warrior_Low_Poly1
+    400000: //RootNode
+    400002: Bone001
+    400004: Bone001(mirrored)
+    400006: Bone002
+    400008: Bone002(mirrored)
+    400010: Bone003
+    400012: Bone003(mirrored)
+    400014: Bone004
+    400016: Bone004(mirrored)
+    400018: Bone005
+    400020: Bone005(mirrored)
+    400022: Bone006
+    400024: Bone006(mirrored)
+    400026: Bone006(mirrored)001
+    400028: Bone007
+    400030: Bone007(mirrored)
+    400032: Bone012
+    400034: Bone013
+    400036: Bone016
+    400038: Bone017
+    400040: Bone018
+    400042: Bone019
+    400044: Bone020
+    400046: Bone021
+    400048: Bone022
+    400050: Bone023
+    400052: Bone024
+    400054: Bone025
+    400056: Head
+    400058: HeadNub
+    400060: IK Chain001
+    400062: IK Chain002
+    400064: IK Chain003
+    400066: IK Chain004
+    400068: Neck
+    400070: Pelvis
+    400072: Pelvisnub
+    400074: RollBone
+    400076: Spine1
+    400078: Spine2
+    400080: Spine3
+    400082: SwordF
+    400084: Toenub
+    400086: Toenub(mirrored)
+    400088: Warrior_Low_Poly1
+    2100000: 01 - Default
+    2100002: 'Material #25'
+    4300000: Warrior_Low_Poly1
+    4300002: SwordF
+    7400000: Walk
+    9500000: //RootNode
+    13700000: SwordF
+    13700002: Warrior_Low_Poly1
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 196c34cb73fc0ac40929ffbf51a2e3ea,
+    type: 3}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
