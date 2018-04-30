@@ -18,6 +18,8 @@ public class Unit : MonoBehaviour {
     public float sightRange;
     RaycastHit hit;
     public Base destination;
+    bool canCapture;
+    float tmp;
 
     void Start()
     {
@@ -26,6 +28,10 @@ public class Unit : MonoBehaviour {
     }
     private void Update()
     {
+        tmp += Time.deltaTime;
+        if (tmp > 2)
+            canCapture = true;
+
         nextAttack += Time.deltaTime;
         Ray ray = new Ray(transform.position, transform.forward);
 
@@ -33,26 +39,52 @@ public class Unit : MonoBehaviour {
         {
             if (faction == Faction.Player)
             {
-                if (hit.collider.GetComponent<Unit>().faction == Faction.Enemy && hit.collider.GetComponent<Unit>() && nextAttack >= attackCooldown)
+                if (hit.collider.GetComponent<Unit>() && hit.collider.GetComponent<Unit>().faction == Faction.Enemy)
                 {
-                    hit.collider.GetComponent<Unit>().TakeDamage(attackDamage);
-                    transform.Find("Model").GetComponent<Animator>().SetTrigger("Attack");
-                    nextAttack = 0;
                     GetComponent<NavMeshAgent>().enabled = false;
+                    if (hit.collider.GetComponent<Unit>() && nextAttack >= attackCooldown)
+                    {
+                        hit.collider.GetComponent<Unit>().TakeDamage(attackDamage);
+                        transform.Find("Model").GetComponent<Animator>().SetTrigger("Attack");
+                        nextAttack = 0;
+                    }
+                }
+                else if (hit.collider.GetComponent<Base>() && hit.collider.GetComponent<Base>().faction == Faction.Enemy)
+                {
+                    GetComponent<NavMeshAgent>().enabled = false;
+                    if (hit.collider.GetComponent<Base>().health.CurrentVal > 0 && nextAttack >= attackCooldown)
+                    {
+                        hit.collider.GetComponent<Base>().TakeDamage(attackDamage);
+                        transform.Find("Model").GetComponent<Animator>().SetTrigger("Attack");
+                        nextAttack = 0;
+                    }
                 }
             }
             else if (faction == Faction.Enemy)
             {
-                if (hit.collider.GetComponent<Unit>().faction == Faction.Player && hit.collider.GetComponent<Unit>() && nextAttack >= attackCooldown)
+                if (hit.collider.GetComponent<Unit>() && hit.collider.GetComponent<Unit>().faction == Faction.Player)
                 {
-                    hit.collider.GetComponent<Unit>().TakeDamage(attackDamage);
-                    transform.Find("Model").GetComponent<Animator>().SetTrigger("Attack");
-                    nextAttack = 0;
                     GetComponent<NavMeshAgent>().enabled = false;
+                    if (hit.collider.GetComponent<Unit>() && nextAttack >= attackCooldown && nextAttack >= attackCooldown)
+                    {
+                        hit.collider.GetComponent<Unit>().TakeDamage(attackDamage);
+                        transform.Find("Model").GetComponent<Animator>().SetTrigger("Attack");
+                        nextAttack = 0;
+                    }
+                }
+                else if (hit.collider.GetComponent<Base>() && hit.collider.GetComponent<Base>().faction == Faction.Player)
+                {
+                    GetComponent<NavMeshAgent>().enabled = false;
+                    if (hit.collider.GetComponent<Base>().health.CurrentVal > 0 && nextAttack >= attackCooldown)
+                    {
+                        hit.collider.GetComponent<Base>().TakeDamage(attackDamage);
+                        transform.Find("Model").GetComponent<Animator>().SetTrigger("Attack");
+                        nextAttack = 0;
+                    }
                 }
             }
         }
-        else if (!Physics.Raycast(ray, out hit, sightRange, canSee))
+        else if (!Physics.Raycast(ray, out hit, sightRange, canSee) || (hit.collider.GetComponent<Base>() && hit.collider.GetComponent<Base>().health.CurrentVal <= 0))
         {
             if (!GetComponent<NavMeshAgent>().enabled)
             {
@@ -90,6 +122,11 @@ public class Unit : MonoBehaviour {
                         GameManager.Instance.enemyBases.Remove(other.GetComponent<Base>());
                     Destroy(gameObject);
                 }
+                else if (other.GetComponent<Base>().faction == Faction.Player && canCapture)
+                {
+                    Destroy(gameObject);
+                    GameManager.Instance.playerUnitCooldown = 0;
+                }
             }
         }
         else if (faction == Faction.Enemy)
@@ -103,6 +140,11 @@ public class Unit : MonoBehaviour {
                     other.gameObject.layer = 9;
                     GameManager.Instance.enemyBases.Add(other.GetComponent<Base>());
                     Destroy(gameObject);
+                }
+                else if (other.GetComponent<Base>().faction == Faction.Enemy && canCapture)
+                {
+                    Destroy(gameObject);
+                    GameManager.Instance.enemyUnitCooldown = 0;
                 }
             }
         }
