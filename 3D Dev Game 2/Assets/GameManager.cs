@@ -6,7 +6,8 @@ using UnityEngine.EventSystems;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour {
+public class GameManager : MonoBehaviour
+{
 
     public static GameManager Instance;
 
@@ -37,10 +38,11 @@ public class GameManager : MonoBehaviour {
     public Material enemyAuraMaterial;
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         Instance = this;
         lineRenderer = GetComponent<LineRenderer>();
-	}
+    }
 
     // Update is called once per frame
     void Update()
@@ -160,6 +162,7 @@ public class GameManager : MonoBehaviour {
 
             GameObject testunit = Instantiate(enemyUnits[currentUnit], enemyBases[currentBase].transform.position, Quaternion.identity);
             testunit.GetComponent<NavMeshAgent>().SetDestination(destinationBase.transform.position);
+            testunit.GetComponent<Unit>().spawnBase = enemyBases[currentBase];
             testunit.GetComponent<Unit>().destination = destinationBase;
             enemyUnitCooldown = enemyUnits[currentUnit].GetComponent<Unit>().spawnCooldown;
         }
