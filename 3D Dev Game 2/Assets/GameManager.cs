@@ -160,6 +160,7 @@ public class GameManager : MonoBehaviour {
 
             GameObject testunit = Instantiate(enemyUnits[currentUnit], enemyBases[currentBase].transform.position, Quaternion.identity);
             testunit.GetComponent<NavMeshAgent>().SetDestination(destinationBase.transform.position);
+            testunit.GetComponent<Unit>().spawnBase = enemyBases[currentBase];
             testunit.GetComponent<Unit>().destination = destinationBase;
             enemyUnitCooldown = enemyUnits[currentUnit].GetComponent<Unit>().spawnCooldown;
         }
