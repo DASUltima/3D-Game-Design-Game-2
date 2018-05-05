@@ -18,12 +18,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< HEAD
     width: 1536
     height: 731
   m_MinSize: {x: 887, y: 492}
   m_MaxSize: {x: 16012, y: 14042}
   vertical: 0
   controlID: 457
+=======
+    width: 1920
+    height: 947
+  m_MinSize: {x: 887, y: 492}
+  m_MaxSize: {x: 16012, y: 14042}
+  vertical: 0
+  controlID: 5462
+>>>>>>> parent of 66c01fe... Added mountains and other assets
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -46,10 +55,17 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 8
     y: 100
     width: 388
     height: 439
+=======
+    x: 0
+    y: 92
+    width: 254
+    height: 655
+>>>>>>> parent of 66c01fe... Added mountains and other assets
   m_PersistentViewDataDictionary: {fileID: 0}
   m_MaximizeOnPlay: 1
   m_Gizmos: 0
@@ -79,10 +95,17 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
+<<<<<<< HEAD
       width: 388
       height: 422
     m_Scale: {x: 0.37890625, y: 0.37890625}
     m_Translation: {x: 194, y: 211}
+=======
+      width: 254
+      height: 638
+    m_Scale: {x: 0.24804688, y: 0.24804688}
+    m_Translation: {x: 127, y: 319}
+>>>>>>> parent of 66c01fe... Added mountains and other assets
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -90,6 +113,7 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -512
+<<<<<<< HEAD
       y: -556.86597
       width: 1024
       height: 1113.7319
@@ -98,6 +122,16 @@ MonoBehaviour:
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
   m_LastWindowPixelSize: {x: 388, y: 439}
+=======
+      y: -1286.0472
+      width: 1024
+      height: 2572.0945
+    m_MinimalGUI: 1
+  m_defaultScale: 0.24804688
+  m_TargetTexture: {fileID: 0}
+  m_CurrentColorSpace: 0
+  m_LastWindowPixelSize: {x: 254, y: 655}
+>>>>>>> parent of 66c01fe... Added mountains and other assets
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -119,12 +153,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1203
     height: 731
   m_MinSize: {x: 610, y: 492}
   m_MaxSize: {x: 12010, y: 14042}
   vertical: 1
   controlID: 458
+=======
+    width: 1588
+    height: 947
+  m_MinSize: {x: 610, y: 492}
+  m_MaxSize: {x: 12010, y: 14042}
+  vertical: 1
+  controlID: 5463
+>>>>>>> parent of 66c01fe... Added mountains and other assets
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,12 +187,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1203
     height: 460
   m_MinSize: {x: 610, y: 221}
   m_MaxSize: {x: 12010, y: 4021}
   vertical: 0
   controlID: 459
+=======
+    width: 1588
+    height: 676
+  m_MinSize: {x: 610, y: 221}
+  m_MaxSize: {x: 12010, y: 4021}
+  vertical: 0
+  controlID: 5464
+>>>>>>> parent of 66c01fe... Added mountains and other assets
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,10 +218,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 390
     height: 460
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
+=======
+    width: 256
+    height: 676
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+>>>>>>> parent of 66c01fe... Added mountains and other assets
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 2}
@@ -189,10 +248,17 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 390
     y: 0
     width: 227
     height: 460
+=======
+    x: 256
+    y: 0
+    width: 204
+    height: 676
+>>>>>>> parent of 66c01fe... Added mountains and other assets
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 7}
@@ -222,6 +288,7 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 400
     y: 100
     width: 223
@@ -232,6 +299,18 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
     m_ExpandedIDs: 4cebffff00000000
+=======
+    x: 258
+    y: 92
+    width: 200
+    height: 655
+  m_PersistentViewDataDictionary: {fileID: 0}
+  m_TreeViewState:
+    scrollPos: {x: 0, y: 338}
+    m_SelectedIDs: 40320000
+    m_LastClickedID: 12864
+    m_ExpandedIDs: d8f5ffff06faffff5efaffff9efbffff0000000078300000bc300000e2300000f03100005232000066320000e4320000b4330000d03300003434000064340000a23400006c35000034360000
+>>>>>>> parent of 66c01fe... Added mountains and other assets
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -268,12 +347,21 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 617
     y: 0
     width: 586
     height: 460
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
+=======
+    x: 460
+    y: 0
+    width: 1128
+    height: 676
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
+>>>>>>> parent of 66c01fe... Added mountains and other assets
   m_ActualView: {fileID: 9}
   m_Panes:
   - {fileID: 9}
@@ -303,6 +391,7 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 627
     y: 100
     width: 582
@@ -310,13 +399,28 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
   lastFramingTime: 2076.914820182925
+=======
+    x: 462
+    y: 92
+    width: 1124
+    height: 655
+  m_PersistentViewDataDictionary: {fileID: 0}
+  m_SceneLighting: 1
+  lastFramingTime: 1131.4760068295916
+>>>>>>> parent of 66c01fe... Added mountains and other assets
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 19.989552, y: 3.7745528, z: 44.789383}
     speed: 2
     m_Value: {x: 19.989552, y: 3.7745528, z: 44.789383}
+=======
+    m_Target: {x: 34.956127, y: 8.003811, z: 55.380592}
+    speed: 2
+    m_Value: {x: 34.956127, y: 8.003811, z: 55.380592}
+>>>>>>> parent of 66c01fe... Added mountains and other assets
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -340,6 +444,7 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
+<<<<<<< HEAD
     m_Target: {x: -0.22090194, y: 0.23768854, z: -0.055605516, w: -0.94425344}
     speed: 2
     m_Value: {x: -0.22090195, y: 0.23768854, z: -0.05560552, w: -0.9442535}
@@ -347,6 +452,15 @@ MonoBehaviour:
     m_Target: 5.489544
     speed: 2
     m_Value: 5.489544
+=======
+    m_Target: {x: -0.18095781, y: 0.3720395, z: -0.07419203, w: -0.90737885}
+    speed: 2
+    m_Value: {x: -0.18095782, y: 0.37203953, z: -0.07419204, w: -0.9073789}
+  m_Size:
+    m_Target: 2.785462
+    speed: 2
+    m_Value: 2.785462
+>>>>>>> parent of 66c01fe... Added mountains and other assets
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -463,8 +577,8 @@ MonoBehaviour:
     y: 460
     width: 1203
     height: 271
-  m_MinSize: {x: 230, y: 250}
-  m_MaxSize: {x: 10000, y: 10000}
+  m_MinSize: {x: 232, y: 271}
+  m_MaxSize: {x: 10002, y: 10021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -522,7 +636,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: ec230000
     m_LastClickedID: 9196
+<<<<<<< HEAD
     m_ExpandedIDs: 000000008e2c00006a3600006c360000
+=======
+    m_ExpandedIDs: 00000000a4290000dc2b00006e39000070390000ee5f0000b6600000bc600000c2600000
+>>>>>>> parent of 66c01fe... Added mountains and other assets
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -547,10 +665,17 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
     m_ExpandedIDs: 000000008e2c00006a3600006c360000
+=======
+    scrollPos: {x: 0, y: 60}
+    m_SelectedIDs: 40320000
+    m_LastClickedID: 0
+    m_ExpandedIDs: 00000000a4290000dc2b00006e39000070390000ee5f0000b6600000bc600000c2600000ae6d0000
+>>>>>>> parent of 66c01fe... Added mountains and other assets
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -575,8 +700,13 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
+<<<<<<< HEAD
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
+=======
+    m_SelectedInstanceIDs: 40320000
+    m_LastClickedInstanceID: 12864
+>>>>>>> parent of 66c01fe... Added mountains and other assets
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:

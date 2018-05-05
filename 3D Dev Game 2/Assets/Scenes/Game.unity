@@ -2876,6 +2876,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: be3ec15f594684449aaa0b2119a5142e, type: 3}
       propertyPath: m_LocalRotation.x
+<<<<<<< HEAD
       value: -0.08502588
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: be3ec15f594684449aaa0b2119a5142e, type: 3}
@@ -2889,6 +2890,21 @@ Prefab:
     - target: {fileID: 400000, guid: be3ec15f594684449aaa0b2119a5142e, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.6425931
+=======
+      value: 0.076121725
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: be3ec15f594684449aaa0b2119a5142e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.094703585
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: be3ec15f594684449aaa0b2119a5142e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.20505334
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: be3ec15f594684449aaa0b2119a5142e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9711796
+>>>>>>> parent of 66c01fe... Added mountains and other assets
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: be3ec15f594684449aaa0b2119a5142e, type: 3}
       propertyPath: m_RootOrder
@@ -7861,7 +7877,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: be3ec15f594684449aaa0b2119a5142e, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
       value: -8.5247965
+=======
+      value: -10.295057
+>>>>>>> parent of 66c01fe... Added mountains and other assets
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: be3ec15f594684449aaa0b2119a5142e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7869,7 +7889,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: be3ec15f594684449aaa0b2119a5142e, type: 3}
       propertyPath: m_LocalPosition.z
+<<<<<<< HEAD
       value: -17.158138
+=======
+      value: -17.49393
+>>>>>>> parent of 66c01fe... Added mountains and other assets
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: be3ec15f594684449aaa0b2119a5142e, type: 3}
       propertyPath: m_LocalRotation.x
@@ -16021,6 +16045,13 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0.000002563}
   m_SizeDelta: {x: 1, y: 0.2611}
   m_Pivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
+=======
+--- !u!4 &1725335220 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: 4afead57d1972e9438f46df06234e890, type: 3}
+  m_PrefabInternal: {fileID: 1313342266}
+>>>>>>> parent of 66c01fe... Added mountains and other assets
 --- !u!1 &1732651422
 GameObject:
   m_ObjectHideFlags: 0
