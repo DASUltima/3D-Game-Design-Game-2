@@ -18,8 +18,7 @@ public class Unit : MonoBehaviour {
     public float sightRange;
     RaycastHit hit;
     public Base destination;
-    bool canCapture;
-    float tmp;
+    public Base spawnBase;
 
     void Start()
     {
@@ -28,10 +27,6 @@ public class Unit : MonoBehaviour {
     }
     private void Update()
     {
-        tmp += Time.deltaTime;
-        if (tmp > 2)
-            canCapture = true;
-
         nextAttack += Time.deltaTime;
         Ray ray = new Ray(transform.position, transform.forward);
 
@@ -49,9 +44,15 @@ public class Unit : MonoBehaviour {
                         nextAttack = 0;
                     }
                 }
-                else if (hit.collider.GetComponent<Base>() && hit.collider.GetComponent<Base>().faction == Faction.Enemy && hit.collider.GetComponent<Base>().health.CurrentVal > 0)
+                else if (hit.collider.GetComponent<Base>() && hit.collider.GetComponent<Base>().faction == Faction.Enemy)
                 {
-                    GetComponent<NavMeshAgent>().enabled = false;
+                    if (hit.collider.GetComponent<Base>().health.CurrentVal > 0)
+                        GetComponent<NavMeshAgent>().enabled = false;
+                    else if (hit.collider.GetComponent<Base>().health.CurrentVal <= 0)
+                    {
+                        GetComponent<NavMeshAgent>().enabled = true;
+                        GetComponent<NavMeshAgent>().SetDestination(destination.transform.position);
+                    }
                     if (hit.collider.GetComponent<Base>().health.CurrentVal > 0 && nextAttack >= attackCooldown)
                     {
                         hit.collider.GetComponent<Base>().TakeDamage(attackDamage);
@@ -72,9 +73,15 @@ public class Unit : MonoBehaviour {
                         nextAttack = 0;
                     }
                 }
-                else if (hit.collider.GetComponent<Base>() && hit.collider.GetComponent<Base>().faction == Faction.Player && hit.collider.GetComponent<Base>().health.CurrentVal > 0)
+                else if (hit.collider.GetComponent<Base>() && hit.collider.GetComponent<Base>().faction == Faction.Player)
                 {
-                    GetComponent<NavMeshAgent>().enabled = false;
+                    if (hit.collider.GetComponent<Base>().health.CurrentVal > 0)
+                        GetComponent<NavMeshAgent>().enabled = false;
+                    else if (hit.collider.GetComponent<Base>().health.CurrentVal <= 0)
+                    {
+                        GetComponent<NavMeshAgent>().enabled = true;
+                        GetComponent<NavMeshAgent>().SetDestination(destination.transform.position);
+                    }
                     if (hit.collider.GetComponent<Base>().health.CurrentVal > 0 && nextAttack >= attackCooldown)
                     {
                         hit.collider.GetComponent<Base>().TakeDamage(attackDamage);
@@ -84,7 +91,7 @@ public class Unit : MonoBehaviour {
                 }
             }
         }
-        else if (!Physics.Raycast(ray, out hit, sightRange, canSee) || (hit.collider.GetComponent<Base>() && hit.collider.GetComponent<Base>().health.CurrentVal <= 0))
+        else if (!Physics.Raycast(ray, out hit, sightRange, canSee))
         {
             if (!GetComponent<NavMeshAgent>().enabled)
             {
@@ -121,9 +128,10 @@ public class Unit : MonoBehaviour {
                     other.gameObject.layer = 8;
                     if (GameManager.Instance.enemyBases.Contains(other.GetComponent<Base>()))
                         GameManager.Instance.enemyBases.Remove(other.GetComponent<Base>());
+                    other.GetComponent<Base>().health.CurrentVal = other.GetComponent<Base>().health.MaxVal;
                     Destroy(gameObject);
                 }
-                else if (other.GetComponent<Base>().faction == Faction.Player && canCapture)
+                else if (other.GetComponent<Base>().faction == Faction.Player && other.GetComponent<Base>() != spawnBase)
                 {
                     Destroy(gameObject);
                     GameManager.Instance.playerUnitCooldown = 0;
@@ -141,9 +149,10 @@ public class Unit : MonoBehaviour {
                     other.GetComponent<Base>().faction = Faction.Enemy;
                     other.gameObject.layer = 9;
                     GameManager.Instance.enemyBases.Add(other.GetComponent<Base>());
+                    other.GetComponent<Base>().health.CurrentVal = other.GetComponent<Base>().health.MaxVal;
                     Destroy(gameObject);
                 }
-                else if (other.GetComponent<Base>().faction == Faction.Enemy && canCapture)
+                else if (other.GetComponent<Base>().faction == Faction.Enemy && other.GetComponent<Base>() != spawnBase)
                 {
                     Destroy(gameObject);
                     GameManager.Instance.enemyUnitCooldown = 0;
