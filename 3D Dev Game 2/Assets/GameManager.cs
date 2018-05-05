@@ -130,13 +130,12 @@ public class GameManager : MonoBehaviour {
     }
     public void ButtonSpawnUnit()
     {
-        for (int unitIndex = 0; unitIndex < units.Count; unitIndex++)
-        {
-            GameObject testunit = Instantiate(units[unitIndex], currentBase.transform.position, Quaternion.identity);
-            testunit.GetComponent<NavMeshAgent>().SetDestination(currentBase.connectingBase[currentPath].transform.position);
-            testunit.GetComponent<Unit>().destination = currentBase.connectingBase[currentPath];
-            playerUnitCooldown = units[unitIndex].GetComponent<Unit>().spawnCooldown;
-        }
+        int unitIndex = EventSystem.current.currentSelectedGameObject.transform.GetSiblingIndex();
+        GameObject testunit = Instantiate(units[unitIndex], currentBase.transform.position, Quaternion.identity);
+        testunit.GetComponent<NavMeshAgent>().SetDestination(currentBase.connectingBase[currentPath].transform.position);
+        testunit.GetComponent<Unit>().destination = currentBase.connectingBase[currentPath];
+        testunit.GetComponent<Unit>().spawnBase = currentBase;
+        playerUnitCooldown = units[unitIndex].GetComponent<Unit>().spawnCooldown;
     }
     void DrawPathBetweenBases()
     {
