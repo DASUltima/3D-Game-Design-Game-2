@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 8fc8060a4d01ded4eb2a0e29bf31e729
 folderAsset: yes
 timeCreated: 1525543134
+=======
+guid: 1a48a308e714a1e4eaef47ff5401d921
+folderAsset: yes
+timeCreated: 1525453106
+>>>>>>> parent of 1183e77... New Update
 licenseType: Free
 DefaultImporter:
   externalObjects: {}
