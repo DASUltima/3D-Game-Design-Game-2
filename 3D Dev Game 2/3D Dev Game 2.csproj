@@ -310,6 +310,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\DieScript.cs" />
+    <Compile Include="Assets\MouseCursor.cs" />
     <Compile Include="Assets\Scripts\BarScript.cs" />
     <Compile Include="Assets\Scripts\Base.cs" />
     <Compile Include="Assets\Scripts\CameraScript.cs" />

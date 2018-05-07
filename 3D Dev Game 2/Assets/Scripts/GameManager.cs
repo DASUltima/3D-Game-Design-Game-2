@@ -45,6 +45,7 @@ public class GameManager : MonoBehaviour
         Instance = this;
         lineRenderer = GetComponent<LineRenderer>();
         playerUnitCooldown.Initialize();
+        Cursor.visible = false;
     }
 
     // Update is called once per frame
