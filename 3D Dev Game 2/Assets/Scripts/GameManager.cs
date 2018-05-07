@@ -189,7 +189,7 @@ public class GameManager : MonoBehaviour
             Base destinationBase = null;
             List<Base> possibleTargets = new List<Base>();
             for (int pathIndex = 0; pathIndex < enemyBases[currentBase].connectingBase.Count; pathIndex++)
-                if (enemyBases[currentBase].connectingBase[pathIndex].faction == Faction.None || enemyBases[currentBase].connectingBase[pathIndex].faction == Faction.Player)
+                if (enemyBases[currentBase] && enemyBases[currentBase].connectingBase[pathIndex] && enemyBases[currentBase].connectingBase[pathIndex].faction == Faction.None || enemyBases[currentBase].connectingBase[pathIndex].faction == Faction.Player)
                     possibleTargets.Add(enemyBases[currentBase].connectingBase[pathIndex]);
 
             int target = Random.Range(0, possibleTargets.Count);
