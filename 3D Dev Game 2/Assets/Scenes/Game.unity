@@ -215,7 +215,7 @@ Prefab:
         type: 2}
       propertyPath: connectingBase.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 831280407}
     - target: {fileID: 114392423226509534, guid: f67f60ad8b6cea14b948f89c2d0b978e,
         type: 2}
       propertyPath: connectingBase.Array.data[1]
@@ -13534,7 +13534,7 @@ Prefab:
         type: 2}
       propertyPath: connectingBase.Array.data[2]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 767157204}
     - target: {fileID: 114392423226509534, guid: f67f60ad8b6cea14b948f89c2d0b978e,
         type: 2}
       propertyPath: health.bar

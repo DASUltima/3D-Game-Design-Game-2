@@ -133,8 +133,11 @@ public class Unit : MonoBehaviour {
             {
                 if (other.GetComponent<Base>().faction == Faction.Enemy || other.GetComponent<Base>().faction == Faction.None)
                 {
-                    other.GetComponent<Base>().meshRenderer.material = GameManager.Instance.playerBaseMaterial;
-                    other.GetComponent<Base>().auraRenderer.material = GameManager.Instance.playerAuraMaterial;
+                    if (other.GetComponent<Base>().meshRenderer)
+                    {
+                        other.GetComponent<Base>().meshRenderer.material = GameManager.Instance.playerBaseMaterial;
+                        other.GetComponent<Base>().auraRenderer.material = GameManager.Instance.playerAuraMaterial;
+                    }
                     other.GetComponent<Base>().faction = Faction.Player;
                     other.gameObject.layer = 8;
                     if (GameManager.Instance.enemyBases.Contains(other.GetComponent<Base>()))
