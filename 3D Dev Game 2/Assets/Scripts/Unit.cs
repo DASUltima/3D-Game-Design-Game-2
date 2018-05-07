@@ -37,6 +37,7 @@ public class Unit : MonoBehaviour {
                 if (hit.collider.GetComponent<Unit>() && hit.collider.GetComponent<Unit>().faction == Faction.Enemy)
                 {
                     GetComponent<NavMeshAgent>().enabled = false;
+                    transform.Find("Model").GetComponent<Animator>().SetBool("Walking",false);
                     if (hit.collider.GetComponent<Unit>() && nextAttack >= attackCooldown)
                     {
                         hit.collider.GetComponent<Unit>().TakeDamage(attackDamage);
@@ -47,11 +48,15 @@ public class Unit : MonoBehaviour {
                 else if (hit.collider.GetComponent<Base>() && hit.collider.GetComponent<Base>().faction == Faction.Enemy)
                 {
                     if (hit.collider.GetComponent<Base>().health.CurrentVal > 0)
+                    {
+                        transform.Find("Model").GetComponent<Animator>().SetBool("Walking", false);
                         GetComponent<NavMeshAgent>().enabled = false;
+                    }
                     else if (hit.collider.GetComponent<Base>().health.CurrentVal <= 0)
                     {
                         GetComponent<NavMeshAgent>().enabled = true;
                         GetComponent<NavMeshAgent>().SetDestination(destination.transform.position);
+                        transform.Find("Model").GetComponent<Animator>().SetBool("Walking", true);
                     }
                     if (hit.collider.GetComponent<Base>().health.CurrentVal > 0 && nextAttack >= attackCooldown)
                     {
@@ -66,6 +71,7 @@ public class Unit : MonoBehaviour {
                 if (hit.collider.GetComponent<Unit>() && hit.collider.GetComponent<Unit>().faction == Faction.Player)
                 {
                     GetComponent<NavMeshAgent>().enabled = false;
+                    transform.Find("Model").GetComponent<Animator>().SetBool("Walking", false);
                     if (hit.collider.GetComponent<Unit>() && nextAttack >= attackCooldown)
                     {
                         hit.collider.GetComponent<Unit>().TakeDamage(attackDamage);
@@ -76,11 +82,15 @@ public class Unit : MonoBehaviour {
                 else if (hit.collider.GetComponent<Base>() && hit.collider.GetComponent<Base>().faction == Faction.Player)
                 {
                     if (hit.collider.GetComponent<Base>().health.CurrentVal > 0)
+                    {
+                        transform.Find("Model").GetComponent<Animator>().SetBool("Walking", false);
                         GetComponent<NavMeshAgent>().enabled = false;
+                    }
                     else if (hit.collider.GetComponent<Base>().health.CurrentVal <= 0)
                     {
                         GetComponent<NavMeshAgent>().enabled = true;
                         GetComponent<NavMeshAgent>().SetDestination(destination.transform.position);
+                        transform.Find("Model").GetComponent<Animator>().SetBool("Walking", true);
                     }
                     if (hit.collider.GetComponent<Base>().health.CurrentVal > 0 && nextAttack >= attackCooldown)
                     {
@@ -97,8 +107,9 @@ public class Unit : MonoBehaviour {
             {
                 GetComponent<NavMeshAgent>().enabled = true;
                 if (destination)
-                    GetComponent<NavMeshAgent>().SetDestination(destination.transform.position);
+                    GetComponent<NavMeshAgent>().SetDestination(destination.transform.position);               
             }
+            transform.Find("Model").GetComponent<Animator>().SetBool("Walking", true);
         }
         Debug.DrawRay(ray.origin, ray.direction, Color.red);
     }
@@ -107,7 +118,7 @@ public class Unit : MonoBehaviour {
         if (damage >= health.CurrentVal)
         {
             // Unit die
-            Destroy(gameObject);
+            transform.Find("Model").GetComponent<Animator>().SetTrigger("Die");
         }
         else if (damage < health.CurrentVal)
         {
@@ -134,7 +145,7 @@ public class Unit : MonoBehaviour {
                 else if (other.GetComponent<Base>().faction == Faction.Player && other.GetComponent<Base>() != spawnBase)
                 {
                     Destroy(gameObject);
-                    GameManager.Instance.playerUnitCooldown = 0;
+                    GameManager.Instance.playerUnitCooldown.CurrentVal = GameManager.Instance.playerUnitCooldown.MaxVal;
                 }
             }
         }

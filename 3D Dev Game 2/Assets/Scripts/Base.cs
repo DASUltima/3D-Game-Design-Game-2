@@ -9,6 +9,7 @@ public class Base : MonoBehaviour {
     public Stat health;
     public MeshRenderer meshRenderer;
     public MeshRenderer auraRenderer;
+    public GameObject selector;
 
     private void Start()
     {

@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     public GameObject unitMenu;
     public LayerMask playerBaseLayer;
     public List<GameObject> units;
-    public float playerUnitCooldown;
+    public Stat playerUnitCooldown;
     public Base currentBase;
     public Base playerHomeBase;
 
@@ -36,12 +36,15 @@ public class GameManager : MonoBehaviour
     public Material playerAuraMaterial;
     public Material enemyBaseMaterial;
     public Material enemyAuraMaterial;
+    public Sprite loseSprite;
+    public Sprite winSprite;
 
     // Use this for initialization
     void Start()
     {
         Instance = this;
         lineRenderer = GetComponent<LineRenderer>();
+        playerUnitCooldown.Initialize();
     }
 
     // Update is called once per frame
@@ -52,20 +55,46 @@ public class GameManager : MonoBehaviour
             gameEnded = true;
             gameEndMenu.SetActive(true);
             gameEndMenu.transform.Find("GameEndText").GetComponent<Text>().text = "You Win!";
+            gameEndMenu.GetComponent<Image>().sprite = winSprite;
         }
         else if (playerHomeBase.health.CurrentVal == 0 && !gameEnded)
         {
             gameEnded = true;
             gameEndMenu.SetActive(true);
             gameEndMenu.transform.Find("GameEndText").GetComponent<Text>().text = "You Lose!";
+            gameEndMenu.GetComponent<Image>().sprite = loseSprite;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            if (playerUnitCooldown.CurrentVal >= playerUnitCooldown.MaxVal)
+            {
+                GameObject testunit = Instantiate(units[0], currentBase.transform.position, Quaternion.identity);
+                testunit.GetComponent<NavMeshAgent>().SetDestination(currentBase.connectingBase[currentPath].transform.position);
+                testunit.GetComponent<Unit>().destination = currentBase.connectingBase[currentPath];
+                testunit.GetComponent<Unit>().spawnBase = currentBase;
+                playerUnitCooldown.CurrentVal = 0;
+                playerUnitCooldown.MaxVal = units[0].GetComponent<Unit>().spawnCooldown;
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            if (playerUnitCooldown.CurrentVal >= playerUnitCooldown.MaxVal)
+            {
+                GameObject testunit = Instantiate(units[0], currentBase.transform.position, Quaternion.identity);
+                testunit.GetComponent<NavMeshAgent>().SetDestination(currentBase.connectingBase[currentPath].transform.position);
+                testunit.GetComponent<Unit>().destination = currentBase.connectingBase[currentPath];
+                testunit.GetComponent<Unit>().spawnBase = currentBase;
+                playerUnitCooldown.CurrentVal = 0;
+                playerUnitCooldown.MaxVal = units[0].GetComponent<Unit>().spawnCooldown;
+            }
         }
         EnemyAI();
-        playerUnitCooldown -= Time.deltaTime;
+        playerUnitCooldown.CurrentVal += Time.deltaTime;
         for (int buttonIndex = 0; buttonIndex < unitMenu.transform.childCount; buttonIndex++)
         {
-            if (playerUnitCooldown > 0)
+            if (playerUnitCooldown.CurrentVal < playerUnitCooldown.MaxVal)
                 unitMenu.transform.GetChild(buttonIndex).GetComponent<Button>().interactable = false;
-            else if (playerUnitCooldown < 0)
+            else if (playerUnitCooldown.CurrentVal >= playerUnitCooldown.MaxVal)
                 unitMenu.transform.GetChild(buttonIndex).GetComponent<Button>().interactable = true;
         }
         if (Input.GetMouseButtonDown(0))
@@ -79,7 +108,10 @@ public class GameManager : MonoBehaviour
                 if (Physics.Raycast(ray, out hit, 100, playerBaseLayer))
                 {
                     unitMenu.SetActive(true);
+                    if (currentBase)
+                        currentBase.selector.SetActive(false);
                     currentBase = hit.collider.GetComponent<Base>();
+                    currentBase.selector.SetActive(true);
                     destinationBase = currentBase.connectingBase[0];
                     lineRenderer.enabled = true;
                     DrawPathBetweenBases();
@@ -87,6 +119,8 @@ public class GameManager : MonoBehaviour
                 else if (!Physics.Raycast(ray, out hit, 100, playerBaseLayer))
                 {
                     unitMenu.SetActive(false);
+                    if (currentBase)
+                        currentBase.selector.SetActive(false);
                     currentBase = null;
                     destinationBase = null;
                     currentPath = 0;
@@ -137,7 +171,8 @@ public class GameManager : MonoBehaviour
         testunit.GetComponent<NavMeshAgent>().SetDestination(currentBase.connectingBase[currentPath].transform.position);
         testunit.GetComponent<Unit>().destination = currentBase.connectingBase[currentPath];
         testunit.GetComponent<Unit>().spawnBase = currentBase;
-        playerUnitCooldown = units[unitIndex].GetComponent<Unit>().spawnCooldown;
+        playerUnitCooldown.CurrentVal = 0;
+        playerUnitCooldown.MaxVal = units[0].GetComponent<Unit>().spawnCooldown;
     }
     void DrawPathBetweenBases()
     {
