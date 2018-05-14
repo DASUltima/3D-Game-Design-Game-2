@@ -1181,7 +1181,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1929649640039394}
-  m_LocalRotation: {x: 0.700614, y: 0.09560501, z: 0.69360024, w: 0.13754492}
+  m_LocalRotation: {x: 0.7006139, y: 0.09560499, z: 0.6936002, w: 0.1375449}
   m_LocalPosition: {x: -0.29413223, y: -0.6401509, z: 0.13199995}
   m_LocalScale: {x: 0.99999994, y: 1.0000004, z: 1.0000004}
   m_Children:
@@ -1635,15 +1635,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   faction: 0
-  speed: 2.5
+  speed: 1.75
   spawnCooldown: 5
   target: {fileID: 0}
-  attackDamage: 1
+  attackDamage: 3
   attackCooldown: 3
   health:
     bar: {fileID: 114491569479208684}
-    maxVal: 5
-    currentVal: 5
+    maxVal: 8
+    currentVal: 8
   canSee:
     serializedVersion: 2
     m_Bits: 1536

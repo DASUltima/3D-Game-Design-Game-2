@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
+# Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3D Dev Game 2.Plugins", "3D Dev Game 2.Plugins.csproj", "{A561E80F-AA00-0CEF-3F3B-C2D7DEEE4CE3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3D Dev Game 2", "3D Dev Game 2.csproj", "{653852D9-DE11-6352-B29E-CB0A0D8CB4AF}"
