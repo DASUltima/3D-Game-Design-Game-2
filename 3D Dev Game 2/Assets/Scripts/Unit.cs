@@ -148,7 +148,9 @@ public class Unit : MonoBehaviour {
                 else if (other.GetComponent<Base>().faction == Faction.Player && other.GetComponent<Base>() != spawnBase)
                 {
                     Destroy(gameObject);
-                    GameManager.Instance.playerUnitCooldown.CurrentVal = GameManager.Instance.playerUnitCooldown.MaxVal;
+                    GameManager.Instance.playerUnitCooldown1.CurrentVal = GameManager.Instance.playerUnitCooldown1.MaxVal;
+                    GameManager.Instance.playerUnitCooldown2.CurrentVal = GameManager.Instance.playerUnitCooldown2.MaxVal;
+                    GameManager.Instance.playerUnitCooldown3.CurrentVal = GameManager.Instance.playerUnitCooldown3.MaxVal;
                 }
             }
         }

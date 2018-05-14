@@ -15,7 +15,9 @@ public class GameManager : MonoBehaviour
     public GameObject unitMenu;
     public LayerMask playerBaseLayer;
     public List<GameObject> units;
-    public Stat playerUnitCooldown;
+    public Stat playerUnitCooldown1;
+    public Stat playerUnitCooldown2;
+    public Stat playerUnitCooldown3;
     public Base currentBase;
     public Base playerHomeBase;
 
@@ -38,13 +40,17 @@ public class GameManager : MonoBehaviour
     public Material enemyAuraMaterial;
     public Sprite loseSprite;
     public Sprite winSprite;
+    public AudioClip win;
+    public AudioClip lose;
 
     // Use this for initialization
     void Start()
     {
         Instance = this;
         lineRenderer = GetComponent<LineRenderer>();
-        playerUnitCooldown.Initialize();
+        playerUnitCooldown1.Initialize();
+        playerUnitCooldown2.Initialize();
+        playerUnitCooldown3.Initialize();
         Cursor.visible = false;
     }
 
@@ -55,47 +61,59 @@ public class GameManager : MonoBehaviour
         {
             gameEnded = true;
             gameEndMenu.SetActive(true);
-            gameEndMenu.transform.Find("GameEndText").GetComponent<Text>().text = "You Win!";
             gameEndMenu.GetComponent<Image>().sprite = winSprite;
+            GetComponent<AudioSource>().clip = win;
+            GetComponent<AudioSource>().Play();
         }
         else if (playerHomeBase.health.CurrentVal == 0 && !gameEnded)
         {
             gameEnded = true;
             gameEndMenu.SetActive(true);
-            gameEndMenu.transform.Find("GameEndText").GetComponent<Text>().text = "You Lose!";
             gameEndMenu.GetComponent<Image>().sprite = loseSprite;
+            GetComponent<AudioSource>().clip = lose;
+            GetComponent<AudioSource>().Play();
         }
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            if (playerUnitCooldown.CurrentVal >= playerUnitCooldown.MaxVal)
+            if (playerUnitCooldown1.CurrentVal >= playerUnitCooldown1.MaxVal)
             {
                 GameObject testunit = Instantiate(units[0], currentBase.transform.position, Quaternion.identity);
                 testunit.GetComponent<NavMeshAgent>().SetDestination(currentBase.connectingBase[currentPath].transform.position);
                 testunit.GetComponent<Unit>().destination = currentBase.connectingBase[currentPath];
                 testunit.GetComponent<Unit>().spawnBase = currentBase;
-                playerUnitCooldown.CurrentVal = 0;
-                playerUnitCooldown.MaxVal = units[0].GetComponent<Unit>().spawnCooldown;
+                playerUnitCooldown1.CurrentVal = 0;
+                playerUnitCooldown1.MaxVal = units[0].GetComponent<Unit>().spawnCooldown;
+                playerUnitCooldown2.CurrentVal = 0;
+                playerUnitCooldown2.MaxVal = units[0].GetComponent<Unit>().spawnCooldown;
+                playerUnitCooldown3.CurrentVal = 0;
+                playerUnitCooldown3.MaxVal = units[0].GetComponent<Unit>().spawnCooldown;
             }
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            if (playerUnitCooldown.CurrentVal >= playerUnitCooldown.MaxVal)
+            if (playerUnitCooldown1.CurrentVal >= playerUnitCooldown1.MaxVal)
             {
                 GameObject testunit = Instantiate(units[0], currentBase.transform.position, Quaternion.identity);
                 testunit.GetComponent<NavMeshAgent>().SetDestination(currentBase.connectingBase[currentPath].transform.position);
                 testunit.GetComponent<Unit>().destination = currentBase.connectingBase[currentPath];
                 testunit.GetComponent<Unit>().spawnBase = currentBase;
-                playerUnitCooldown.CurrentVal = 0;
-                playerUnitCooldown.MaxVal = units[0].GetComponent<Unit>().spawnCooldown;
+                playerUnitCooldown1.CurrentVal = 0;
+                playerUnitCooldown1.MaxVal = units[0].GetComponent<Unit>().spawnCooldown;
+                playerUnitCooldown2.CurrentVal = 0;
+                playerUnitCooldown2.MaxVal = units[0].GetComponent<Unit>().spawnCooldown;
+                playerUnitCooldown3.CurrentVal = 0;
+                playerUnitCooldown3.MaxVal = units[0].GetComponent<Unit>().spawnCooldown;
             }
         }
         EnemyAI();
-        playerUnitCooldown.CurrentVal += Time.deltaTime;
+        playerUnitCooldown1.CurrentVal += Time.deltaTime;
+        playerUnitCooldown2.CurrentVal += Time.deltaTime;
+        playerUnitCooldown3.CurrentVal += Time.deltaTime;
         for (int buttonIndex = 0; buttonIndex < unitMenu.transform.childCount; buttonIndex++)
         {
-            if (playerUnitCooldown.CurrentVal < playerUnitCooldown.MaxVal)
+            if (playerUnitCooldown1.CurrentVal < playerUnitCooldown1.MaxVal)
                 unitMenu.transform.GetChild(buttonIndex).GetComponent<Button>().interactable = false;
-            else if (playerUnitCooldown.CurrentVal >= playerUnitCooldown.MaxVal)
+            else if (playerUnitCooldown1.CurrentVal >= playerUnitCooldown1.MaxVal)
                 unitMenu.transform.GetChild(buttonIndex).GetComponent<Button>().interactable = true;
         }
         if (Input.GetMouseButtonDown(0))
@@ -172,8 +190,12 @@ public class GameManager : MonoBehaviour
         testunit.GetComponent<NavMeshAgent>().SetDestination(currentBase.connectingBase[currentPath].transform.position);
         testunit.GetComponent<Unit>().destination = currentBase.connectingBase[currentPath];
         testunit.GetComponent<Unit>().spawnBase = currentBase;
-        playerUnitCooldown.CurrentVal = 0;
-        playerUnitCooldown.MaxVal = units[0].GetComponent<Unit>().spawnCooldown;
+        playerUnitCooldown1.CurrentVal = 0;
+        playerUnitCooldown1.MaxVal = units[0].GetComponent<Unit>().spawnCooldown;
+        playerUnitCooldown2.CurrentVal = 0;
+        playerUnitCooldown2.MaxVal = units[0].GetComponent<Unit>().spawnCooldown;
+        playerUnitCooldown3.CurrentVal = 0;
+        playerUnitCooldown3.MaxVal = units[0].GetComponent<Unit>().spawnCooldown;
     }
     void DrawPathBetweenBases()
     {
