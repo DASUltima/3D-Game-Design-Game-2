@@ -149,6 +149,7 @@ public class GameManager : MonoBehaviour
                     currentBase.selector.SetActive(true);
                     destinationBase = currentBase.connectingBase[0];
                     lineRenderer.enabled = true;
+                    currentPath = 0;
                     DrawPathBetweenBases();
                 }
                 else if (!Physics.Raycast(ray, out hit, 100, playerBaseLayer))
