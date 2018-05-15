@@ -28,7 +28,18 @@ public class CameraScript : MonoBehaviour {
     {
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
-        pivot += new Vector3(horizontal * cameraMoveSpeed, 0, vertical * cameraMoveSpeed);
+        if (pivot.x <= xLimit && pivot.x >= xNegLimit && pivot.z <= zLimit && pivot.z >= zNegLimit)
+        {
+            pivot += new Vector3(horizontal * cameraMoveSpeed, 0, vertical * cameraMoveSpeed);
+            if (pivot.x > xLimit)
+                pivot.x = xLimit;
+            if (pivot.x < xNegLimit)
+                pivot.x = xNegLimit;
+            if (pivot.z > zLimit)
+                pivot.z = zLimit;
+            if (pivot.z < zNegLimit)
+                pivot.z = zNegLimit;
+        }
 
         transform.position = pivot;
     }

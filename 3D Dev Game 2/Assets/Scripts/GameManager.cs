@@ -93,16 +93,32 @@ public class GameManager : MonoBehaviour
         {
             if (playerUnitCooldown1.CurrentVal >= playerUnitCooldown1.MaxVal)
             {
-                GameObject testunit = Instantiate(units[0], currentBase.transform.position, Quaternion.identity);
+                GameObject testunit = Instantiate(units[1], currentBase.transform.position, Quaternion.identity);
                 testunit.GetComponent<NavMeshAgent>().SetDestination(currentBase.connectingBase[currentPath].transform.position);
                 testunit.GetComponent<Unit>().destination = currentBase.connectingBase[currentPath];
                 testunit.GetComponent<Unit>().spawnBase = currentBase;
                 playerUnitCooldown1.CurrentVal = 0;
-                playerUnitCooldown1.MaxVal = units[0].GetComponent<Unit>().spawnCooldown;
+                playerUnitCooldown1.MaxVal = units[1].GetComponent<Unit>().spawnCooldown;
                 playerUnitCooldown2.CurrentVal = 0;
-                playerUnitCooldown2.MaxVal = units[0].GetComponent<Unit>().spawnCooldown;
+                playerUnitCooldown2.MaxVal = units[1].GetComponent<Unit>().spawnCooldown;
                 playerUnitCooldown3.CurrentVal = 0;
-                playerUnitCooldown3.MaxVal = units[0].GetComponent<Unit>().spawnCooldown;
+                playerUnitCooldown3.MaxVal = units[1].GetComponent<Unit>().spawnCooldown;
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            if (playerUnitCooldown1.CurrentVal >= playerUnitCooldown1.MaxVal)
+            {
+                GameObject testunit = Instantiate(units[2], currentBase.transform.position, Quaternion.identity);
+                testunit.GetComponent<NavMeshAgent>().SetDestination(currentBase.connectingBase[currentPath].transform.position);
+                testunit.GetComponent<Unit>().destination = currentBase.connectingBase[currentPath];
+                testunit.GetComponent<Unit>().spawnBase = currentBase;
+                playerUnitCooldown1.CurrentVal = 0;
+                playerUnitCooldown1.MaxVal = units[2].GetComponent<Unit>().spawnCooldown;
+                playerUnitCooldown2.CurrentVal = 0;
+                playerUnitCooldown2.MaxVal = units[2].GetComponent<Unit>().spawnCooldown;
+                playerUnitCooldown3.CurrentVal = 0;
+                playerUnitCooldown3.MaxVal = units[2].GetComponent<Unit>().spawnCooldown;
             }
         }
         EnemyAI();
